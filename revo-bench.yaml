@@ -1,0 +1,6 @@
+minWaitTime: 3s
+maxWaitTime: 5s
+endStopTime: 30s
+midConcurrency: 10
+concurrencyMultiplier: 2
+cacheTTL: 1m0s

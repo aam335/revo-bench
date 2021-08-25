@@ -1,0 +1,23 @@
+{
+    // "go.vetOnSave": "on",
+    "go.lintFlags": [
+        "--new",
+    ],
+    // "go.lintOnSave": "on",
+    "go.formatTool": "goimports",
+    "go.buildOnSave": "off",
+    "go.testFlags": [
+        // "-vet=off"
+    ],
+    "go.vetFlags": [
+        "-composites=false"
+    ],
+    "go.addTags": {
+        "tags": "yaml",
+        "options": "omitempty",
+        "transform": "camelcase"
+    },
+    "go.lintTool": "golangci-lint",
+    "go.gopath": "/home/echo/gogo",
+    "terminal.integrated.env.linux": {"GOPATH":"/home/echo/gogo", "GOROOT":"/usr/local/go"}
+}
