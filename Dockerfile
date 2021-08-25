@@ -31,4 +31,4 @@ WORKDIR /data
 EXPOSE 8080:8080
 
 
-ENTRYPOINT ["/main"]
+ENTRYPOINT ["/main", "-conf", "revo-bench.yaml"]
