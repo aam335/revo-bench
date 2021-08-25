@@ -21,7 +21,7 @@ type Config struct {
 	MinWaitTime time.Duration `yaml:"minWaitTime" default:"3s"`
 	// MaxWaitTime предельное время на ответ
 	MaxWaitTime time.Duration `yaml:"maxWaitTime" default:"5s"`
-	// EndStopTime ерез сколько времени прекратить ждать ответов и отдать результат
+	// EndStopTime через сколько времени прекратить ждать ответов и отдать результат
 	EndStopTime time.Duration `yaml:"endStopTime" default:"30s"`
 	// со скольки запросов начинать тренировку.
 	MidConcurrency int `yaml:"midConcurrency" default:"10"`

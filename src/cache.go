@@ -25,7 +25,7 @@ func (c *Cache) Get(site string, ttl time.Duration) int { // returns -1, есл�
 		return -1
 	}
 	if cached, ok := iface.(*cacheItem); ok && time.Since(cached.stt) < ttl {
-		log.Printf("from cache %v: %#v", site, cached)
+		log.Printf("from cache %v: %#v", site, cached.parallels)
 		return cached.parallels
 	}
 	return -1
@@ -33,6 +33,6 @@ func (c *Cache) Get(site string, ttl time.Duration) int { // returns -1, есл�
 
 func (c *Cache) Put(site string, parallels int) {
 	v := &cacheItem{parallels: parallels, stt: time.Now()}
-	log.Printf("2cache %v:%#v", site, v)
+	log.Printf("to cache %v:%#v", site, v.parallels)
 	c.m.Store(site, v)
 }
